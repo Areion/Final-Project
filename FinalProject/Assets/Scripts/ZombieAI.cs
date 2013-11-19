@@ -8,11 +8,11 @@ public class ZombieAI : MonoBehaviour {
 		GameObject[] players;
 		float closestDistance = 1000000f;
 		
-		public Zombie zombieBlueprint;
-		public int ZombieCount = 15;
-		int randomNumber = 0;
+		//public Zombie zombieBlueprint;
+		//public int ZombieCount = 15;
+		//int randomNumber = 0;
 		
-		public List<zombie> zombieList = new List<zombie>(); // you must initialize lists to use them
+		//public List<zombie> zombieList = new List<zombie>(); // you must initialize lists to use them
 	
 //	void OnCollisionEnter(Collision collision){
 //		
@@ -25,15 +25,15 @@ public class ZombieAI : MonoBehaviour {
 	void Start () {
 		players = GameObject.FindGameObjectsWithTag("Player");
 
-        int currentZombieCounter = 0;
-            while ( currentZombieCounter < ZombieCount ) {
-            randomNumber = Random.Range (0,10);
+       // int currentZombieCounter = 0;
+        //    while ( currentZombieCounter < ZombieCount ) {
+         //   randomNumber = Random.Range (0,10);
 			
-				Vector3 zombiePosition = Random.insideUnitSphere * 20f;
-                zombie newZombie = Instantiate( zombieBlueprint, zombiePosition, Quaternion.identity ) as zombie;
-                zombieList.Add( newzombie ); 
-                currentZombieCounter++;
-		}
+		//		Vector3 zombiePosition = Random.insideUnitSphere * 20f;
+        //        zombie newZombie = Instantiate( zombieBlueprint, zombiePosition, Quaternion.identity ) as zombie;
+        //        zombieList.Add( newzombie ); 
+        //        currentZombieCounter++;
+		//}
         
 	}
 	
