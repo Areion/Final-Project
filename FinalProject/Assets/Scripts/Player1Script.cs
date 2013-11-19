@@ -11,7 +11,7 @@ public class Player1Script : MonoBehaviour {
 	public float jumpSpeed = 5f;
 	public float fallSpeed = 10f;
 	//bool grounded = false;
-	
+
 	
 	// Use this for initialization
 	void Start () {
