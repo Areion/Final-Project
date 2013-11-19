@@ -1,18 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
 public class ZombieAI : MonoBehaviour {
 	
-		GameObject closestPlayer;
-		GameObject[] players;
-		float closestDistance = 1000000f;
-		
-		//public Zombie zombieBlueprint;
-		//public int ZombieCount = 15;
-		//int randomNumber = 0;
-		
-		//public List<zombie> zombieList = new List<zombie>(); // you must initialize lists to use them
+		public Transform Player1; //Drag Player1's object in the Hierarchy onto this in the inspector
+		public Transform Player2; //Drag Player2's object in the Hierarchy onto this in the inspector
 	
 //	void OnCollisionEnter(Collision collision){
 //		
@@ -23,34 +15,24 @@ public class ZombieAI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		players = GameObject.FindGameObjectsWithTag("Player");
-
-       // int currentZombieCounter = 0;
-        //    while ( currentZombieCounter < ZombieCount ) {
-         //   randomNumber = Random.Range (0,10);
-			
-		//		Vector3 zombiePosition = Random.insideUnitSphere * 20f;
-        //        zombie newZombie = Instantiate( zombieBlueprint, zombiePosition, Quaternion.identity ) as zombie;
-        //        zombieList.Add( newzombie ); 
-        //        currentZombieCounter++;
-		//}
-        
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		Vector3 distance1 = (Player1.position - transform.position);
+		Vector3 distance2 = (Player2.position - transform.position);
 		
-		foreach (GameObject player in players){
-
-		Vector3 distance = player.transform.position - transform.position;
-
-		if (distance.magnitude < closestDistance){
-		closestPlayer = player;
-		closestDistance = distance.magnitude;
-		transform.Translate(0f  * Time.deltaTime, 0f  * Time.deltaTime, 1f  * Time.deltaTime);
-			}
+		
+		// change the z translate to a public variable
+		if (distance1.magnitude < distance2.magnitude) {
+			transform.LookAt (Player1);
+			transform.Translate (0f * Time.deltaTime, 0f * Time.deltaTime, 5f * Time.deltaTime);
 			
-		transform.LookAt (player.transform.localPosition);
+		}else{
+			transform.LookAt (Player2);
+			transform.Translate (0f * Time.deltaTime, 0f * Time.deltaTime, 5f * Time.deltaTime);
 			
 		}
 	}
