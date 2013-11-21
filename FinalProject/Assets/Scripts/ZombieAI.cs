@@ -13,12 +13,8 @@ public class ZombieAI : MonoBehaviour {
 //		}
 //	}
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
+
+
 	void Update () {
 
 		Vector3 distance1 = (Player1.position - transform.position);
