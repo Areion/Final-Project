@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 17350a16e13acb149855c56581884206
+guid: 6fd3ed650e22b1045928f8c571a53dc0
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
@@ -9,59 +9,30 @@ ModelImporter:
     100006: LegLeft
     100008: LegRight
     100010: //RootNode
-    100012: LeftArm
-    100014: LeftLeg
-    100016: pCube1
-    100018: RightArm
-    100020: RightLeg
-    100022: Torso
     400000: ArmLeft
     400002: ArmRight
     400004: Head
     400006: LegLeft
     400008: LegRight
     400010: //RootNode
-    400012: LeftArm
-    400014: LeftLeg
-    400016: pCube1
-    400018: RightArm
-    400020: RightLeg
-    400022: Torso
     2300000: ArmLeft
     2300002: ArmRight
     2300004: Head
     2300006: LegLeft
     2300008: LegRight
     2300010: //RootNode
-    2300012: LeftArm
-    2300014: LeftLeg
-    2300016: pCube1
-    2300018: RightArm
-    2300020: RightLeg
-    2300022: Torso
     3300000: ArmLeft
     3300002: ArmRight
     3300004: Head
     3300006: LegLeft
     3300008: LegRight
     3300010: //RootNode
-    3300012: LeftArm
-    3300014: LeftLeg
-    3300016: pCube1
-    3300018: RightArm
-    3300020: RightLeg
-    3300022: Torso
     4300000: Torso
     4300002: LegLeft
     4300004: LegRight
     4300006: ArmLeft
     4300008: ArmRight
     4300010: Head
-    4300012: RightLeg
-    4300014: LeftLeg
-    4300016: LeftArm
-    4300018: RightArm
-    4300020: pCube1
     7400000: Take 001
     9500000: //RootNode
   materials:
