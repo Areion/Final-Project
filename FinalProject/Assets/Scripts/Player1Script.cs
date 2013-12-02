@@ -4,7 +4,7 @@ using System.Collections;
 public class Player1Script : MonoBehaviour {
 // first, for camera: parent the camera behind the player, in-editor
 	
-	Vector3 moveVector;
+	public Vector3 moveVector;
 	
 	public float speed = 15f;
 	public float turnSpeed = 90f;
