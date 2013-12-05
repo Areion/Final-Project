@@ -3,21 +3,30 @@ using System.Collections;
 
 public class antidoteBehavior : MonoBehaviour {
 	
-	
-
-	void Start () {
-		print ( "started script");
-	}
-	void Update () {}
+	public bool beingCarried = false;
 	
 	
+	void OnTriggerEnter( Collider coll ) {
+		if ( coll.tag == "Player1" || coll.tag == "Player2" ) {
+			
+			//CURING SOMEONE WITH ANTIDOTE
+			if ( beingCarried  && ( coll.GetComponent<PlayerState>().isZombie == true ) ) {
+				coll.GetComponent<PlayerState>().isZombie = false;
+			}
 
+			//PICKING UP ANTIDOTE
+			else if ( coll.GetComponent<PlayerState>().isZombie == false ) {
 
+				////TEST
+				audio.Play (); //params are delay
+				////TEST
 
-	void onTriggerEnter( Collider coll ) {
-			print ("collided with Player1");
-			//transform.parent = coll.GetComponent<Transform>();	
-	}
+				transform.parent = coll.GetComponent<Transform>();
+				beingCarried = true;
+			}
+			
+			
+		}
 		
-
+	}
 }
