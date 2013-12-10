@@ -5,12 +5,16 @@ public class ZombieAI : MonoBehaviour {
 	
 	public Transform Player1;
 	public Transform Player2;
-	float minDistance = 10f;
-	float randomDestinationSwitch = 5f; //set a different random location as destination every 5 seconds
+	public float minDistance = 100f;
+	public float randomDestinationSwitch = 5f; //set a different random location as destination every 5 seconds
 	bool tooFar = true;
+	
+	Animation myAnimation;
 
 	void Start () {
-		InvokeRepeating( "RandomRoam", 0f, 2f );
+		InvokeRepeating( "RandomRoam", 0f, randomDestinationSwitch );
+		
+		myAnimation = GetComponentInChildren<Animation>();
 	}
 
 
@@ -22,7 +26,9 @@ public class ZombieAI : MonoBehaviour {
 
 		
 	void Update () {
-
+	
+		myAnimation.CrossFade ("Walk");
+				
 		Vector3 distance1 = (Player1.position - transform.position);
 		Vector3 distance2 = (Player2.position - transform.position);
 
