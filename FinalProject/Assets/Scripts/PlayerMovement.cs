@@ -8,8 +8,15 @@ public class PlayerMovement : MonoBehaviour {
 	public Vector3 moveVector;
 	public float speed = 0.7f;
 	public float turnSpeed = 800f;
+	
+	Animation myAnimation;
+	
+	void Start () {
+		myAnimation = GetComponentInChildren<Animation>();
+	}
 
 	void Update () {
+		
 
 		moveVector = Vector3.zero; // if user isn't pressing any keys reset movement to zero
 
@@ -20,6 +27,16 @@ public class PlayerMovement : MonoBehaviour {
 
 		//IF NOT A ZOMBIE
 		else {
+			if ( rigidbody.velocity.magnitude > 0.01f ) {
+				myAnimation.CrossFade ("Walk");
+				
+			}
+			else {
+				myAnimation.CrossFade ("Idle");
+			} 
+			
+				
+			
 			if ( tag == "Player1" ) movePlayer1();
 			else if ( tag == "Player2" ) movePlayer2();
 		}

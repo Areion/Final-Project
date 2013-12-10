@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 17350a16e13acb149855c56581884206
+guid: 0f2575fb7ac3c4194926d2ed55d3faa5
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
@@ -9,50 +9,30 @@ ModelImporter:
     100006: LegLeft
     100008: LegRight
     100010: //RootNode
-    100012: LeftArm
-    100014: LeftLeg
-    100016: RightArm
-    100018: RightLeg
     400000: ArmLeft
     400002: ArmRight
     400004: Head
     400006: LegLeft
     400008: LegRight
     400010: //RootNode
-    400012: LeftArm
-    400014: LeftLeg
-    400016: RightArm
-    400018: RightLeg
     2300000: ArmLeft
     2300002: ArmRight
     2300004: Head
     2300006: LegLeft
     2300008: LegRight
     2300010: //RootNode
-    2300012: LeftArm
-    2300014: LeftLeg
-    2300016: RightArm
-    2300018: RightLeg
     3300000: ArmLeft
     3300002: ArmRight
     3300004: Head
     3300006: LegLeft
     3300008: LegRight
     3300010: //RootNode
-    3300012: LeftArm
-    3300014: LeftLeg
-    3300016: RightArm
-    3300018: RightLeg
     4300000: Torso
     4300002: LegLeft
     4300004: LegRight
     4300006: ArmLeft
     4300008: ArmRight
     4300010: Head
-    4300012: RightLeg
-    4300014: LeftLeg
-    4300016: LeftArm
-    4300018: RightArm
     7400000: Walk
     7400002: Idle
     9500000: //RootNode
@@ -73,7 +53,7 @@ ModelImporter:
     - name: Walk
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 24
+      lastFrame: 34
       wrapMode: 2
       orientationOffsetY: 0
       level: 0

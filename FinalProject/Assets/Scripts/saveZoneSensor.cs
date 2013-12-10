@@ -11,9 +11,11 @@ public class saveZoneSensor : MonoBehaviour {
 	
 	void OnTriggerStay( Collider collider ) {
 
-		if ( collider.GetComponent<PlayerState>().isZombie == false ) {
-			if(  collider.tag == "Player1" ) player1isSafe = true;
-			else if(  collider.tag == "Player2" ) player2isSafe = true;
+		if ( collider.tag == "Player1" || collider.tag == "Player2" ) {
+			if ( collider.GetComponent<PlayerState>().isZombie == false ) {
+				if(  collider.tag == "Player1" ) player1isSafe = true;
+				else if(  collider.tag == "Player2" ) player2isSafe = true;
+			}
 		}
 	}
 	
