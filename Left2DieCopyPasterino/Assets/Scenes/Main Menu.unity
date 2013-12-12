@@ -131,6 +131,7 @@ GameObject:
   - 33: {fileID: 835355701}
   - 64: {fileID: 835355700}
   - 23: {fileID: 835355699}
+  - 114: {fileID: 835355703}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -184,9 +185,20 @@ Transform:
   m_GameObject: {fileID: 835355698}
   m_LocalRotation: {x: 4.27435152e-05, y: .707106769, z: -.707106829, w: -4.26817642e-05}
   m_LocalPosition: {x: 0, y: 0, z: 8.67481422}
-  m_LocalScale: {x: 1.35557353, y: 1, z: 1}
+  m_LocalScale: {x: 1.59095812, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &835355703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835355698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4403380a387c4cba8942ace8691b26b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1258253318
 GameObject:
   m_ObjectHideFlags: 0
